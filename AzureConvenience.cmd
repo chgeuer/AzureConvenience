@@ -1,6 +1,10 @@
 
-REM Source: https://github.com/chgeuer/AzureConvenience
 
+REM @powershell -NoProfile -ExecutionPolicy unrestricted -Command "((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/chgeuer/AzureConvenience/master/AzureConvenience.cmd', 'AzureConvenience.cmd')" && call AzureConvenience.cmd
+
+
+REM https://github.com/chgeuer/AzureConvenience
+REM RAW: https://raw.githubusercontent.com/chgeuer/AzureConvenience/master/AzureConvenience.cmd
 
 REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\{A509B1A7-37EF-4b3f-8CFC-4F3A74704073}" /v "IsInstalled" /t REG_DWORD /d 0 /f
 REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Active Setup\Installed Components\{A509B1A8-37EF-4b3f-8CFC-4F3A74704073}" /v "IsInstalled" /t REG_DWORD /d 0 /f
