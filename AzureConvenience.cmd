@@ -19,11 +19,11 @@ REG ADD "HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Main" /v "Start 
 
 @powershell -NoProfile -ExecutionPolicy unrestricted -Command "iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))" && SET PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin
 
+start "" %windir%\system32\inetsrv\InetMgr.exe
+
 chocolatey install sublimetext2
 start "" "d:\Program Files\Sublime Text 2\sublime_text.exe"
 
 chocolatey install sysinternals
 start "" d:\tools\sysinternals\Dbgview.exe /accepteula
 start "" d:\tools\sysinternals\procmon.exe /accepteula
-
-%windir%\system32\inetsrv\InetMgr.exe
