@@ -22,8 +22,8 @@ REG ADD "HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Main" /v "Start 
 start "" %windir%\system32\inetsrv\InetMgr.exe
 
 chocolatey install sublimetext2
-start "" "d:\Program Files\Sublime Text 2\sublime_text.exe"
+start "" "%SystemDrive%\Program Files\Sublime Text 2\sublime_text.exe"
 
 chocolatey install sysinternals
-start "" d:\tools\sysinternals\Dbgview.exe /accepteula
-start "" d:\tools\sysinternals\procmon.exe /accepteula
+start "" %SystemDrive%\tools\sysinternals\Dbgview.exe /accepteula
+start "" %SystemDrive%\tools\sysinternals\procmon.exe /accepteula
