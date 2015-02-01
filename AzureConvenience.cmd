@@ -26,4 +26,4 @@ start "" "%SystemDrive%\Program Files\Sublime Text 2\sublime_text.exe"
 
 chocolatey install sysinternals
 start "" %SystemDrive%\tools\sysinternals\Dbgview.exe /accepteula
-start "" %SystemDrive%\tools\sysinternals\procmon.exe /accepteula
+start "" %SystemDrive%\tools\sysinternals\procexp.exe /accepteula
