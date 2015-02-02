@@ -32,3 +32,15 @@ ping 1.1.1.1 -n 1 -w 2000 >NUL
 copy %tmp%\procexp64.exe %windir%\system32
 start "" %windir%\system32\procexp64.exe
 mklink "%USERPROFILE%\Desktop\ProcExp64" %windir%\system32\procexp64.exe
+
+
+
+
+
+@powershell -NoProfile -ExecutionPolicy unrestricted -Command "((New-Object System.Net.WebClient).DownloadFile('https://github.com/mridgers/clink/releases/download/0.4.3/clink_0.4.3.zip','clink_0.4.3.zip' ));[System.Reflection.Assembly]::LoadWithPartialName('System.IO.Compression.FileSystem');[System.IO.Compression.ZipFile]::ExtractToDirectory('clink_0.4.3.zip', '.')"
+start "" .\clink_0.4.3\clink_x64.exe autorun -i
+
+
+
+
+
