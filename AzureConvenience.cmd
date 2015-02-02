@@ -30,4 +30,4 @@ start "" %SystemDrive%\tools\sysinternals\procexp.exe /accepteula
 # ping, a.k.a. pause 2000 ms
 ping 1.1.1.1 -n 1 -w 2000 >NUL
 copy %tmp%\procexp64.exe %windir%\system32
-
+start "" %windir%\system32\procexp64.exe
