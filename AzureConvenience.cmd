@@ -41,6 +41,6 @@ mklink "%USERPROFILE%\Desktop\ProcExp64" %windir%\system32\procexp64.exe
 start "" %windir%\system32\procexp64.exe
 
 REM CLink http://mridgers.github.io/clink/
-@powershell -NoProfile -ExecutionPolicy unrestricted -Command "((New-Object System.Net.WebClient).DownloadFile('https://github.com/mridgers/clink/releases/download/0.4.3/clink_0.4.4.zip','clink_0.4.4.zip' ));[System.Reflection.Assembly]::LoadWithPartialName('System.IO.Compression.FileSystem');[System.IO.Compression.ZipFile]::ExtractToDirectory('clink_0.4.4.zip', '.')"
+@powershell -NoProfile -ExecutionPolicy unrestricted -Command "((New-Object System.Net.WebClient).DownloadFile('https://github.com/mridgers/clink/releases/download/0.4.4/clink_0.4.4.zip','clink_0.4.4.zip' ));[System.Reflection.Assembly]::LoadWithPartialName('System.IO.Compression.FileSystem');[System.IO.Compression.ZipFile]::ExtractToDirectory('clink_0.4.4.zip', '.')"
 start "" .\clink_0.4.4\clink_x64.exe autorun -i
 
