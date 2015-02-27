@@ -1,6 +1,6 @@
 
 
-My own little bootstrap code ``http://aka.ms/bootstrap`` to get my preferred bits onto a new VM
+My own little bootstrap code ``http://aka.ms/bootstrap`` to get my preferred bits onto a new VM. For details, see my blog article: http://blog.geuer-pollmann.de/blog/2015/02/20/getting-your-favority-tools-onto-your-azure-vm/
 
 
 ```
